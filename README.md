@@ -41,13 +41,13 @@ A full-stack web application built with ASP.NET Core Web API and Angular.
 
 ## Project Structure
 RegistrationManagementSystem.API
-├── Controllers
-├── Models
-├── DTOs
-├── Data
-├── Repositories
-├── Services
-└── Helpers
+ - Controllers
+ - Models
+ - DTOs
+ - Data
+ - Repositories
+ - Services
+ - Helpers
 
 ## Author
 Bhavyang Dixit
