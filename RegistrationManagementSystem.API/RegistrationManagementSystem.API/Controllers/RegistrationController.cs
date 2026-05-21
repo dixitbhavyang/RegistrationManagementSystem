@@ -20,7 +20,7 @@ namespace RegistrationManagementSystem.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] RegisterDTO dto, [FromForm] List<IFormFile> files)
+        public async Task<IActionResult> Create([FromForm]RegisterDTO dto, [FromForm] List<IFormFile> files)
         {
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
             var result = await _registrationService.CreateAsync(dto, userId, files);

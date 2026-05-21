@@ -10,10 +10,12 @@ namespace RegistrationManagementSystem.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
+        private readonly IRegistrationService _registrationService;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, IRegistrationService registrationService)
         {
             _authService = authService;
+            _registrationService = registrationService;
         }
 
         [HttpPost("register")]
@@ -25,6 +27,8 @@ namespace RegistrationManagementSystem.API.Controllers
             var user = await _authService.RegisterAsync(dto);
             if (user == null)
                 return BadRequest(new { message = "Username already exists." });
+
+            await _registrationService.CreateAsync(dto, user.Id, files);
 
             return Ok(new { message = "Registration successful." });
         }
