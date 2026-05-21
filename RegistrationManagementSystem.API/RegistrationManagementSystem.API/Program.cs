@@ -1,8 +1,13 @@
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using RegistrationManagementSystem.API.Data;
+using RegistrationManagementSystem.API.Helpers;
+using RegistrationManagementSystem.API.Repositories;
+using RegistrationManagementSystem.API.Repositories.Interfaces;
+using RegistrationManagementSystem.API.Services;
+using RegistrationManagementSystem.API.Services.Interfaces;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +48,25 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
+});
+
+builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+builder.Services.AddScoped<IRegistrationRepository, RegistrationRepository>();
+builder.Services.AddScoped<IStateRepository, StateRepository>();
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IRegistrationService, RegistrationService>();
+builder.Services.AddScoped<IStateService, StateService>();
+builder.Services.AddScoped<ICityService, CityService>();
+
+builder.Services.AddScoped<JwtHelper>();
+builder.Services.AddScoped<FileHelper>();
+
+
+builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 50 * 1024 * 1024; // 50MB
 });
 
 var app = builder.Build();
