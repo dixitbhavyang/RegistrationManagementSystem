@@ -8,7 +8,9 @@
         public string Gender { get; set; } = string.Empty;
         public string Hobbies { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
+        public int? StateId { get; set; }
         public string State { get; set; } = string.Empty;
+        public int? CityId { get; set; }
         public string City { get; set; } = string.Empty;
         public string Pincode { get; set; } = string.Empty;
         public DateTime DateOfBirth { get; set; }

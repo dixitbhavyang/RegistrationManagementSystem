@@ -258,6 +258,17 @@ namespace RegistrationManagementSystem.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Admin",
+                            PasswordHash = "$2a$11$Tg4MvNMoGGsupfh9S3X5XOqfHmFBBBnGRFp5yXqbTi6GK9JdFgW2i",
+                            Role = "Admin",
+                            Username = "admin"
+                        });
                 });
 
             modelBuilder.Entity("RegistrationManagementSystem.API.Models.UserDocument", b =>

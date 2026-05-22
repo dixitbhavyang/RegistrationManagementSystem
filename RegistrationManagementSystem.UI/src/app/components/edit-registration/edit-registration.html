@@ -1,0 +1,105 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-dark text-center">
+                    <h4>Edit Registration</h4>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" formControlName="name"
+                                [class.is-invalid]="isInvalid('name')">
+                            <div class="invalid-feedback">Name is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" formControlName="dateOfBirth" [max]="today"
+                                [class.is-invalid]="isInvalid('dateOfBirth')">
+                            <div class="invalid-feedback">Valid date of birth is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender" value="Male">
+                                    <label class="form-check-label">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender"
+                                        value="Female">
+                                    <label class="form-check-label">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender" value="Other">
+                                    <label class="form-check-label">Other</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Hobbies</label>
+                            <div>
+                                <div class="form-check form-check-inline" *ngFor="let hobby of hobbiesList">
+                                    <input class="form-check-input" type="checkbox" [checked]="isHobbySelected(hobby)"
+                                        (change)="onHobbyChange(hobby, $event)">
+                                    <label class="form-check-label">{{ hobby }}</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input type="text" class="form-control" formControlName="address"
+                                [class.is-invalid]="isInvalid('address')">
+                            <div class="invalid-feedback">Address is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">State</label>
+                            <select class="form-select" formControlName="stateId"
+                                [class.is-invalid]="isInvalid('stateId')" (change)="onStateChange($event)">
+                                <option value="">Select State</option>
+                                <option *ngFor="let state of states" [value]="state.id">{{ state.name }}</option>
+                            </select>
+                            <div class="invalid-feedback">State is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <select class="form-select" formControlName="cityId"
+                                [class.is-invalid]="isInvalid('cityId')">
+                                <option value="">Select City</option>
+                                <option *ngFor="let city of cities" [value]="city.id">{{ city.name }}</option>
+                            </select>
+                            <div class="invalid-feedback">City is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Pincode</label>
+                            <input type="text" class="form-control" formControlName="pincode"
+                                [class.is-invalid]="isInvalid('pincode')">
+                            <div class="invalid-feedback">Valid 6 digit pincode is required.</div>
+                        </div>
+
+                        <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+                        <div class="alert alert-success" *ngIf="successMessage">{{ successMessage }}</div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-warning w-100" [disabled]="isLoading">
+                                {{ isLoading ? 'Updating...' : 'Update' }}
+                            </button>
+                            <button type="button" class="btn btn-secondary w-100" (click)="goBack()">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

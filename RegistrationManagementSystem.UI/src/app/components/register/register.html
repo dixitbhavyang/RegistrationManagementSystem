@@ -1,0 +1,151 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>User Registration</h4>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" formControlName="name"
+                                [class.is-invalid]="isInvalid('name')">
+                            <div class="invalid-feedback">Name is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Username</label>
+                            <input type="text" class="form-control" formControlName="username"
+                                [class.is-invalid]="isInvalid('username')">
+                            <div class="invalid-feedback">Username is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <div class="input-group">
+                                <input [type]="showPassword ? 'text' : 'password'" class="form-control"
+                                    formControlName="password" [class.is-invalid]="isInvalid('password')">
+                                <button class="btn btn-outline-secondary" type="button" (click)="togglePassword()">
+                                    {{ showPassword ? 'Hide' : 'Show' }}
+                                </button>
+                            </div>
+                            <div class="invalid-feedback" *ngIf="registerForm.get('password')?.errors?.['required']">
+                                Password is required.
+                            </div>
+                            <div class="invalid-feedback" *ngIf="registerForm.get('password')?.errors?.['pattern']">
+                                Password must be at least 8 characters with uppercase, lowercase, number and special
+                                character.
+                            </div>
+                            <div class="mt-1" *ngIf="registerForm.get('password')?.value">
+                                <span class="text-danger" *ngIf="!passwordStrength.hasMinLength">Minimum 8 characters<br></span>
+                                <span class="text-danger" *ngIf="!passwordStrength.hasUppercase">One uppercase letter<br></span>
+                                <span class="text-danger" *ngIf="!passwordStrength.hasLowercase">One lowercase letter<br></span>
+                                <span class="text-danger" *ngIf="!passwordStrength.hasNumber">One number<br></span>
+                                <span class="text-danger" *ngIf="!passwordStrength.hasSpecial">One special character (@$!%*?&)</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" formControlName="dateOfBirth" [max]="today"
+                                [class.is-invalid]="isInvalid('dateOfBirth')">
+                            <div class="invalid-feedback">Valid date of birth is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender" value="Male">
+                                    <label class="form-check-label">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender"
+                                        value="Female">
+                                    <label class="form-check-label">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender" value="Other">
+                                    <label class="form-check-label">Other</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Hobbies</label>
+                            <div>
+                                <div class="form-check form-check-inline" *ngFor="let hobby of hobbiesList">
+                                    <input class="form-check-input" type="checkbox" [checked]="isHobbySelected(hobby)"
+                                        (change)="onHobbyChange(hobby, $event)">
+                                    <label class="form-check-label">{{ hobby }}</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input type="text" class="form-control" formControlName="address"
+                                [class.is-invalid]="isInvalid('address')">
+                            <div class="invalid-feedback">Address is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">State</label>
+                            <select class="form-select" formControlName="stateId"
+                                [class.is-invalid]="isInvalid('stateId')" (change)="onStateChange($event)">
+                                <option value="">Select State</option>
+                                <option *ngFor="let state of states" [value]="state.id">{{ state.name }}</option>
+                            </select>
+                            <div class="invalid-feedback">State is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <select class="form-select" formControlName="cityId"
+                                [class.is-invalid]="isInvalid('cityId')">
+                                <option value="">Select City</option>
+                                <option *ngFor="let city of cities" [value]="city.id">{{ city.name }}</option>
+                            </select>
+                            <div class="invalid-feedback">City is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Pincode</label>
+                            <input type="text" class="form-control" formControlName="pincode"
+                                [class.is-invalid]="isInvalid('pincode')">
+                            <div class="invalid-feedback">Valid 6 digit pincode is required.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Upload Documents (PDF, JPG, PNG, DOC — Max 5MB each)</label>
+                            <input type="file" class="form-control" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                                (change)="onFileChange($event)">
+                            <div class="mt-2" *ngIf="selectedFiles.length > 0">
+                                <small class="text-muted">Selected files:</small>
+                                <ul class="list-unstyled">
+                                    <li *ngFor="let file of selectedFiles">
+                                        <small>{{ file.name }} ({{ (file.size / 1024 / 1024).toFixed(2) }} MB)</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+                        <div class="alert alert-success" *ngIf="successMessage">{{ successMessage }}</div>
+
+                        <button type="submit" class="btn btn-primary w-100" [disabled]="isLoading">
+                            {{ isLoading ? 'Registering...' : 'Register' }}
+                        </button>
+
+                        <div class="text-center mt-3">
+                            <span>Already have an account? </span>
+                            <span routerLink="/login" class="link-primary text-decoration-none" role="button"
+                                tabindex="0">Login here</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

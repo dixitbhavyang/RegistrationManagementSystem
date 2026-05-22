@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\dtos\\registrationlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\dtos\\registrationlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +46,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "RegistrationManagementSystem.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBEAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RegistrationService.cs",
+              "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Services\\RegistrationService.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Services\\RegistrationService.cs",
+              "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Services\\RegistrationService.cs",
+              "RelativeToolTip": "RegistrationManagementSystem.API\\Services\\RegistrationService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAWwFYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T06:23:42.351Z",
+              "WhenOpened": "2026-05-21T11:08:59.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "RegistrationListDTO.cs",
+              "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\DTOs\\RegistrationListDTO.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\DTOs\\RegistrationListDTO.cs",
+              "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\DTOs\\RegistrationListDTO.cs",
+              "RelativeToolTip": "RegistrationManagementSystem.API\\DTOs\\RegistrationListDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T11:08:35.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RegistrationController.cs",
               "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Controllers\\RegistrationController.cs",
               "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Controllers\\RegistrationController.cs",
               "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Controllers\\RegistrationController.cs",
               "RelativeToolTip": "RegistrationManagementSystem.API\\Controllers\\RegistrationController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAA3wC0AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T06:19:17.5Z",
+              "WhenOpened": "2026-05-21T11:08:27.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Services\\AuthService.cs",
+              "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Services\\AuthService.cs",
+              "RelativeToolTip": "RegistrationManagementSystem.API\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T10:33:23.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Program.cs",
+              "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Program.cs",
+              "RelativeToolTip": "RegistrationManagementSystem.API\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAgwFYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T10:25:04.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Data\\AppDbContext.cs",
+              "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "RegistrationManagementSystem.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAqwFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T09:51:57.702Z",
               "EditorCaption": ""
             }
           ]

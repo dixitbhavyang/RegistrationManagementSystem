@@ -70,6 +70,18 @@ namespace RegistrationManagementSystem.API.Data
                 new City { Id = 13, Name = "Bangalore", StateId = 5 },
                 new City { Id = 14, Name = "Mysore", StateId = 5 }
             );
+
+            modelBuilder.Entity<User>().HasData(
+                new User
+                {
+                    Id = 3,
+                    Name = "Admin",
+                    Username = "admin",
+                    PasswordHash = "$2a$11$Tg4MvNMoGGsupfh9S3X5XOqfHmFBBBnGRFp5yXqbTi6GK9JdFgW2i",
+                    Role = "Admin",
+                    CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+                }
+            );
         }
     }
 }

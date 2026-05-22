@@ -1,0 +1,42 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Login</h4>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <div class="mb-3">
+                            <label class="form-label">Username</label>
+                            <input type="text" class="form-control" formControlName="username"
+                                [class.is-invalid]="loginForm.get('username')?.invalid && loginForm.get('username')?.touched">
+                            <div class="invalid-feedback">Username is required.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <div class="input-group">
+                                <input [type]="showPassword ? 'text' : 'password'" class="form-control"
+                                    formControlName="password"
+                                    [class.is-invalid]="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                                <button class="btn btn-outline-secondary" type="button" (click)="togglePassword()">
+                                    {{ showPassword ? 'Hide' : 'Show' }}
+                                </button>
+                            </div>
+                            <div class="invalid-feedback">Password is required.</div>
+                        </div>
+                        <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+                        <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid || isLoading">
+                            {{ isLoading ? 'Logging in...' : 'Login' }}
+                        </button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <span>Don't have an account? </span>
+                        <span routerLink="/register" class="link-primary text-decoration-none" role="button">Register
+                            here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
