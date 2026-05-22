@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\helpers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\helpers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\helpers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|solutionrelative:registrationmanagementsystem.api\\helpers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96B55162-6F2B-C452-B826-D148276C1A08}|RegistrationManagementSystem.API\\RegistrationManagementSystem.API.csproj|e:\\projects\\registrationmanagementsystem\\registrationmanagementsystem.api\\registrationmanagementsystem.api\\models\\userdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,20 +50,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Program.cs",
+              "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Program.cs",
+              "RelativeToolTip": "RegistrationManagementSystem.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T04:28:49.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "JwtHelper.cs",
               "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Helpers\\JwtHelper.cs",
               "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Helpers\\JwtHelper.cs",
               "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Helpers\\JwtHelper.cs",
               "RelativeToolTip": "RegistrationManagementSystem.API\\Helpers\\JwtHelper.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCcAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T12:54:25.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "RegistrationController.cs",
               "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Controllers\\RegistrationController.cs",
               "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Controllers\\RegistrationController.cs",
@@ -67,12 +84,11 @@
               "RelativeToolTip": "RegistrationManagementSystem.API\\Controllers\\RegistrationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:44:25.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T12:44:25.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "RegistrationService.cs",
               "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Services\\RegistrationService.cs",
               "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Services\\RegistrationService.cs",
@@ -80,12 +96,11 @@
               "RelativeToolTip": "RegistrationManagementSystem.API\\Services\\RegistrationService.cs",
               "ViewState": "AgIAAHAAAAAAAAAAAAAswIMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:44:19.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T12:44:19.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserDocument.cs",
               "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Models\\UserDocument.cs",
               "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Models\\UserDocument.cs",
@@ -93,12 +108,11 @@
               "RelativeToolTip": "RegistrationManagementSystem.API\\Models\\UserDocument.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAgAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T12:43:10.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T12:43:10.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\appsettings.json",
               "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\appsettings.json",
@@ -106,18 +120,17 @@
               "RelativeToolTip": "RegistrationManagementSystem.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-21T12:25:10.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T12:25:10.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "FileHelper.cs",
               "DocumentMoniker": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Helpers\\FileHelper.cs",
               "RelativeDocumentMoniker": "RegistrationManagementSystem.API\\Helpers\\FileHelper.cs",
               "ToolTip": "E:\\Projects\\RegistrationManagementSystem\\RegistrationManagementSystem.API\\RegistrationManagementSystem.API\\Helpers\\FileHelper.cs",
               "RelativeToolTip": "RegistrationManagementSystem.API\\Helpers\\FileHelper.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAmwEEAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwEEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T12:25:08.279Z",
               "EditorCaption": ""

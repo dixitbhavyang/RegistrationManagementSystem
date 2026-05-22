@@ -12,14 +12,10 @@ import { CommonModule } from '@angular/common';
 export class App {
   protected readonly title = signal('RegistrationManagementSystem.UI');
 
-  isLoggedIn : Boolean = false;
-
   constructor(
     public authService: Auth,
     private router: Router,
-  ) {
-    this.isLoggedIn = authService.isLoggedIn();
-  }
+  ) {}
 
   logout(): void {
     this.authService.logout();
